@@ -46,8 +46,7 @@ Route::post('/<token>/webhook', function () {
     // Send the response back to the user
     Telegram::sendMessage([
         'chat_id' => $update['message']['chat']['id'],
-         'text' => nl2br($response_msg),
-         'parse_mode' => 'HTML',
+         'text' => $response_msg
     ]);
     return response('OK');
 });
