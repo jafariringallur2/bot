@@ -30,9 +30,9 @@ return [
     */
     'bots'                         => [
         'mybot' => [
-            'token'               => env('TELEGRAM_BOT_TOKEN', '6397428948:AAGEWEZMgXuOnstli2rpVXudomZZVFxY1Gc'),
+            'token'               => env('TELEGRAM_BOT_TOKEN'),
             'certificate_path'    => env('TELEGRAM_CERTIFICATE_PATH', ''),
-            'webhook_url'         => env('TELEGRAM_WEBHOOK_URL', 'https://bot.botire.in/<token>/webhook'),
+            'webhook_url'         => env('TELEGRAM_WEBHOOK_URL'),
             'commands'            => [
                 //Acme\Project\Commands\MyTelegramBot\BotCommand::class
             ],
